@@ -17,7 +17,8 @@ public class LoginPage {
         loginField.setValue(info.getLogin());
         passwordField.setValue(info.getPassword());
         loginButton.click();
-        return Selenide.page(VerificationPage.class);
+        //return Selenide.page(VerificationPage.class);
+        return new VerificationPage();
     }
 }
 
